@@ -99,23 +99,5 @@ body{
         }
         /*Contenedor de botones para menú desplegable*/
         .contMenuDesp{
-            height: 3em;
-            margin: auto 3em auto auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             display: none;
         }
-            /*Características de botones para menú desplegable*/
-            .btnMenu{
-                height: 2em;
-                margin: auto 0.5em;
-                transition-duration: 1s;
-            }
-            /*Características de botones para menú desplegable*/
-            .btnMenu:hover{
-                padding: 0.2em;
-                background-color: rgba(244, 172, 172, 0.806);
-                cursor: pointer;
-                transition-duration: 1s;
-            }
