@@ -274,6 +274,7 @@ body{
     /*SECCIÓN DE NUEVOS PRODUCTOS*/
     .contProd{
         position: inherit;  
+        width: 100%;
         height: 70vh;
         background-image: url(02-portPrin.svg);
         background-repeat: no-repeat;
@@ -310,28 +311,29 @@ body{
             }
         /*Contenedor de la primer descripción*/
         .descripProd{
-            width: 60%;
+            width: 50%;
             height: 15%;
             background-color: rgba(255, 255, 255, 0.836);
             position: absolute;
             top: 4vh;
-            text-align: center;
             border-radius: 1em;
             font-weight: bolder;
+            display: flex;
+            justify-content: center;
         }
             /*Titulo de la primer descripción*/
             .titlePro{
-                word-spacing: 10px;
-                letter-spacing: 2px;
+                position: absolute;
                 font-size: 2em;
-                line-height: 0;
+                bottom: 1vh;
             }
                 /*Descripción*/
                 .descrProd{
-                    letter-spacing: 2px;
+                    position: absolute;
+                    bottom: 0vh;
                     font-size: 1.4em;
-                    line-height: 0;
                     color: rgb(1, 77, 1);
+                    text-align: center;
                 }
         /*Contenedor del slider*/
         .contSliderProd{
@@ -357,7 +359,7 @@ body{
             }
             /*Características de los marcos de las imágenes*/
             .icoImgProd{
-                width: 30vh;
+                width: 100%;
                 height: 30vh;
                 background-color: rgba(255, 255, 255, 0.789);
                 margin: 5px;
@@ -368,9 +370,11 @@ body{
             }
                 /*Características de las imáges del slider*/
                 .imgTamProd{
-                    height: 26vh;
+                    width: inherit;
+                    height: inherit;
                     filter: brightness(130%);
                     filter: contrast(130%);
+                    border-radius: 1em;
                     margin: auto;
                     object-fit: cover;
                 }
