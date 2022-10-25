@@ -142,19 +142,15 @@ body{
         .contMenuDesp{
             display: none;
         }
-
         /*Sección de presentación principal*/
         .contPrinc{
             position: inherit;
-            width: 100%;
-            height: 85vh;
+            height: 100vh;
             display: flex;
             background-image: url(01-portPrin.svg);
-        }
-        /*Imágen de fondo de la sección principal*/
-        .portPrinc{ 
-            width: inherit;
-            height: inherit;
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: 0;
         }
             /*Contenedor principal*/
             .contAnunPrin{
@@ -168,7 +164,6 @@ body{
                 align-items: center;
                 background-color: rgba(0, 0, 0, 0.786);
             }
-
                 /*Sección de presentación*/
                 .descPrinc{
                     width: 60vh;
@@ -178,7 +173,7 @@ body{
                     flex-direction: column;
                     justify-content: center;  
                 }
-
+                    /*Descripción principal*/
                     .descPagPrin{
                         text-align: center;
                         font-size: 4vh;
@@ -186,7 +181,7 @@ body{
                         color: white;
                         margin: auto;
                     }
-
+                    /*Boton comenzar*/
                     .btn{
                         width: 20vh;
                         height: 6vh;
@@ -198,11 +193,10 @@ body{
                         font-weight: bolder;
                         color: rgb(255, 255, 255);
                     }
-
+                    /*Boton "comenzar" al pasar el mosuse*/
                     .btn:hover{
                         cursor: pointer;
                     }
-
                 /*Sección del carrusel de imágenes*/
                 .contCarousel{
                     width: 50vh;
@@ -215,7 +209,7 @@ body{
                     flex-direction: column;
                     justify-content: center;            
                 }
-                
+                    /*Icono de la imagen a presentar*/
                     .slider{
                         width: 40vh;
                         height: 40vh;
@@ -229,7 +223,7 @@ body{
                         position: relative;
                         list-style: none;
                     }
-                    
+                        /*Contenerdor de la imagen*/
                         .opcCarousel{
                             position: absolute;
                             opacity: 0;
@@ -237,28 +231,28 @@ body{
                             height: inherit;
                             transition-duration: 1s;
                         }
-                        
+                            /*Características de las imágenes*/
                             .caracImgCarousel{
                                 width: 100%;
                                 height: 40vh;
                                 object-fit: cover;
                             }
-                        
+                        /*Opacidad en la imágenes*/
                         .opcCarousel:target{
                             opacity: 1;
                         }
-                    
+                    /*Botones para seleccionar las imágenes*/
                     .selecOpcCarousel{
                         text-align: center;
                         margin: auto;
                         padding: 0;
                     }
-                    
+                        /*Características del alineado de los botones*/
                         .caracOpcCarousel{
                             display: inline-block;
                             text-align: center;
                         }
-                        
+                            /*Características de los botones*/
                             .caracBtn{
                                 width: 0.1vh;
                                 height: 0.1vh;
@@ -270,11 +264,145 @@ body{
                                 border-style: solid;
                                 border-width: 1px;
                             }
-
+                            /*Características de los botones al pasar el mouse*/
                             .caracBtn:hover{
                                 background-color: rgba(170, 0, 0, 0.934);
                                 width: 0.2vh;
                                 height: 0.2vh;
                                 padding: 1vh;
                             }
-
+    /*SECCIÓN DE NUEVOS PRODUCTOS*/
+    .contProd{
+        position: inherit;  
+        height: 70vh;
+        background-image: url(02-portPrin.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(80%);
+        border-style: solid;
+        border-color: white;
+        border-width: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        /*Características del triángulo*/
+        .triangulo{
+            margin: auto;
+            border-right: 35vh solid transparent;
+            border-left: 0vh solid transparent;
+            border-top: 35vh solid rgb(206, 0, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+            /*ANUNCIO DE NUEVOS PRODUCTOS*/
+            .caracAviso{
+                position: absolute;
+                rotate: -45deg;
+                color: white;
+                font-weight: bold;
+                font-size: 2.2em;
+                text-align: center;
+                top: -8em;
+                left: -3vh; 
+            }
+        /*Contenedor de la primer descripción*/
+        .descripProd{
+            width: 60%;
+            height: 15%;
+            background-color: rgba(255, 255, 255, 0.836);
+            position: absolute;
+            top: 4vh;
+            text-align: center;
+            border-radius: 1em;
+            font-weight: bolder;
+        }
+            /*Titulo de la primer descripción*/
+            .titlePro{
+                word-spacing: 10px;
+                letter-spacing: 2px;
+                font-size: 2em;
+                line-height: 0;
+            }
+                /*Descripción*/
+                .descrProd{
+                    letter-spacing: 2px;
+                    font-size: 1.4em;
+                    line-height: 0;
+                    color: rgb(1, 77, 1);
+                }
+        /*Contenedor del slider*/
+        .contSliderProd{
+            width: 70%;
+            height: 40%;
+            display: flex;
+            align-items: center;    
+            position: absolute;
+        }
+            /*Boton Izquierdo*/
+            .triangIzq{
+                border-bottom: 5vh solid transparent;
+                border-top: 5vh solid transparent;
+                border-right: 7vh solid rgb(0, 221, 255);
+                margin: auto;
+            }
+            /*Boton Izquierdo al pasar el mouse*/
+            .triangIzq:hover{
+                border-bottom: 7vh solid transparent;
+                border-top: 7vh solid transparent;
+                border-right: 10vh solid rgb(0, 255, 217);
+                cursor: pointer;
+            }
+            /*Características de los marcos de las imágenes*/
+            .icoImgProd{
+                width: 30vh;
+                height: 30vh;
+                background-color: rgba(255, 255, 255, 0.789);
+                margin: 5px;
+                border-color: white;
+                border-style: solid;
+                border-radius: 1em;
+                display: flex;
+            }
+                /*Características de las imáges del slider*/
+                .imgTamProd{
+                    height: 26vh;
+                    filter: brightness(130%);
+                    filter: contrast(130%);
+                    margin: auto;
+                    object-fit: cover;
+                }
+            /*Boton derecho*/
+            .triangDer{
+                border-bottom: 5vh solid transparent;
+                border-top: 5vh solid transparent;
+                border-left: 7vh solid rgb(0, 221, 255);
+                margin: auto;
+            }
+             /*Boton derecho al pasar el mouse*/
+            .triangDer:hover{
+                border-bottom: 7vh solid transparent;
+                border-top: 7vh solid transparent;
+                border-left: 10vh solid rgb(0, 255, 217);
+                cursor: pointer;
+            }
+        /*Contenedor de la segunda descripción*/
+        .contDescDos{
+            width: 60%;
+            height: 15%;
+            background-color: rgba(255, 255, 255, 0.849);
+            position: absolute;
+            bottom: 3em;
+            display: flex;
+            text-align: center;
+            border-radius: 1em;
+            border-style: none;
+        }
+            /*Características del texto*/
+            .descDos{
+                font-size: 1.4em;
+                font-weight: bolder;
+                margin: auto;
+            }
