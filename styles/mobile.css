@@ -301,3 +301,243 @@ body{
                             background-color: rgba(170, 0, 0, 0.934);
                             border-color: greenyellow;
                         }
+    /*SECCIÓN DE NUEVOS PRODUCTOS*/
+    .contProd{
+        position: relative;  
+        width: 100%-10px;
+        height: 60em;
+        background-image: url(02-portPrin.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(80%);
+        border: 10px solid rgb(206, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+        /*Características del triángulo*/
+        .triangulo{
+            width: 100%;
+            height: 12%;
+            margin: auto;
+            background-color: rgb(206, 0, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+            /*ANUNCIO DE NUEVOS PRODUCTOS*/
+            .caracAviso{
+                color: white;
+                font-weight: bold;
+                font-size: 40px;
+                text-align: center;
+                margin: auto;
+            }
+        /*Contenedor de la primer descripción*/
+        .descripProd{
+            width: 95%;
+            height: 18%;
+            background-color: rgba(255, 255, 255, 0.836);
+            position: absolute;
+            top: 8rem;
+            border-radius: 1em;
+            font-weight: bolder;
+
+        }
+            /*Titulo de la primer descripción*/
+            .titlePro{
+                width: 100%;
+                height: 45%;
+                font-size: 2em;
+                margin: auto;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            /*Descripción*/
+            .descrProd{
+                width: 100%;
+                height: 45%;
+                bottom: 0;
+                font-size: 1.4em;
+                color: rgb(1, 77, 1);
+                text-align: center;
+            }
+        /*Contenedor del slider*/
+        .contSliderProd{
+            width: 98%;
+            height: 40%;
+            margin: 5rem  auto auto auto;
+            display: flex;
+            align-items: center;   
+            justify-content: center; 
+            position: absolute;
+            background-color: aliceblue;
+        }
+            /*Boton Izquierdo*/
+            .triangIzq{
+                position: absolute;
+                left: 2%;
+                border-bottom: 2em solid transparent;
+                border-top: 2em solid transparent;
+                border-right: 4em solid rgb(0, 221, 255);
+                margin: auto;
+            }
+            /*Boton Izquierdo al pasar el mouse*/
+            .triangIzq:hover{
+                border-bottom: 3em solid transparent;
+                border-top: 3em solid transparent;
+                border-right: 5em solid rgb(0, 255, 217);
+                cursor: pointer;
+            }
+            /*Características de los marcos de las imágenes*/
+            .icoImgProd{
+                width: 60%;
+                height: 90%;
+                margin: auto;
+                background-color: rgb(0, 0, 0);
+                border-color: white;
+                border-style: solid;
+                border-radius: 1.2em;
+                position: absolute;
+                z-index: 1;
+            }
+                /*Características de las imáges del slider*/
+                .imgTamProd{
+                    width: 100%;
+                    height: 100%;
+                    filter: brightness(130%);
+                    filter: contrast(130%);
+                    border-radius: 1em;
+                    object-fit: cover;
+                }
+            /*Boton derecho*/
+            .triangDer{
+                position: absolute;
+                right: 2%;
+                border-bottom: 2em solid transparent;
+                border-top: 2em solid transparent;
+                border-left: 4em solid rgb(0, 221, 255);
+                margin: auto;
+            }
+             /*Boton derecho al pasar el mouse*/
+            .triangDer:hover{
+                border-bottom: 3em solid transparent;
+                border-top: 3em solid transparent;
+                border-left: 5em solid rgb(0, 255, 217);
+                cursor: pointer;
+            }
+        /*Contenedor de la segunda descripción*/
+        .contDescDos{
+            width: 60%;
+            height: 15%;
+            background-color: rgba(255, 255, 255, 0.849);
+            position: absolute;
+            bottom: 3em;
+            display: flex;
+            text-align: center;
+            border-radius: 1em;
+            border-style: none;
+        }
+            /*Características del texto*/
+            .descDos{
+                font-size: 1.4em;
+                font-weight: bolder;
+                margin: auto;
+            }
+     /*SECCIÓN DE SERVICIOS*/
+     .contServicios{  
+        width: 100%;
+        height: 90em;
+        background: url(03-portPrin.svg) no-repeat center center;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+        /*titulo de la sección de servicios*/
+        .contTituloServicios{
+            width: 85%;
+            height: 8rem;
+            background-color: rgba(255, 255, 255, 0.834);
+            border-radius: 1rem;
+            margin: 20px auto 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            /*Titulo*/
+            .tituloServicios{
+                text-align: center;
+                font-size: 300%;
+                font-weight: bolder;
+            }
+        /*Contenedor del slider de servicios*/
+        .contSliderServicios{
+            width: 90%;
+            height: 50%;
+            margin: 15px auto auto auto;
+        }
+            /*Contenedor de los servicios*/
+            .contArtServ{
+                width: 95%;
+                height: 55%;
+                background-color: rgba(255, 255, 255, 0.749);
+                border: 0.5rem solid white;
+                border-radius: 1rem;
+                margin: auto auto 10px auto;
+                display: grid;
+                grid-row: 30% 30% 30%;
+            }
+                /*titulo del sevicio*/
+                .titleArtServ{
+                    width: 85%;
+                    height: 2.2rem;
+                    background-color: aqua;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-weight: bolder;
+                    font-size: 2rem;
+                }
+                /*Descripción breve del servio*/
+                .descArtSer{
+                    width: 98%;
+                    height: 15rem;
+                    background-color: aquamarine;
+                    font-weight: bolder;
+                    font-size: 1.4rem;
+                    margin: 5px auto;
+                }
+                /*Boton conocer más*/
+                .btnArtServ{
+                    width: 85%;
+                    height: 80%;
+                    background-color: black;
+                    border-radius: 1rem;
+                    border-style: none;
+                    margin: auto;
+                    color: white;
+                    font-weight: bolder;
+                    font-size: 1.8rem;
+                }
+                /*Boton conocer más al pasar el mouse*/
+                .btnArtServ:hover{
+                    background-color: rgba(0, 0, 0, 0.387);
+                    cursor: pointer;
+                }
+                /*Color del triángulo izquierdo*/
+                .colorTriangIzq{
+                    display: none;
+                }
+                /*Color del triángulo derecho*/
+                .colorTriangDer{
+                    display: none;
+                }
