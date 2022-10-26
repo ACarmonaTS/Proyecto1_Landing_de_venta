@@ -17,6 +17,7 @@ body{
     align-items: center;
     font-weight: bold;
     font-size: large;
+    z-index: 2;
 }
     /*Contenedor del logo*/
     .contLogo{      
@@ -167,3 +168,136 @@ body{
                 transition-duration: 500ms; 
                 cursor: pointer;
             }
+    /*Sección de presentación principal*/
+    .contPrinc{
+        width: 100%;
+        height: 68rem;
+        display: flex;
+        background-image: url(01-portPrin.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+    }
+        /*Contenedor principal*/
+        .contAnunPrin{
+            width: 95%;
+            height: 95%;
+            border-radius: 2em;
+            border-style: none;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.786);
+            display: grid;
+            grid-row: 40% 60%;
+        }
+            /*Sección de presentación*/
+            .descPrinc{
+                width: 98%;
+                height: 28rem;
+                margin: 20px auto 0 auto;
+                display: flex;
+                flex-direction: column;
+            }
+                /*Descripción principal*/
+                .descPagPrin{
+                    width: 90%;
+                    height: 80%;
+                    margin: 10% auto 0 auto;
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: bolder;
+                    color: white;
+                }
+                /*Boton comenzar*/
+                .btn{
+                    width: 15rem;
+                    height: 3rem;
+                    background-color: rgb(107, 5, 5);
+                    border: 5px solid white;
+                    border-radius: 1vh;
+                    margin: auto;
+                    font-size: 2vh;
+                    font-weight: bolder;
+                    color: rgb(255, 255, 255);
+                }
+                /*Boton "comenzar" al pasar el mosuse*/
+                .btn:hover{
+                    cursor: pointer;
+                    background-color: rgb(162, 75, 75);
+                }
+            /*Sección del carrusel de imágenes*/
+            .contCarousel{
+                width: 90%;
+                height: 34rem;
+                background-color: rgba(129, 11, 11, 0.646);
+                border-radius: 1em;
+                border-style: none;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;            
+            }
+                /*Icono de la imagen a presentar*/
+                .slider{
+                    width: 80%;
+                    height: 80%;
+                    padding: 0;
+                    background-color: rgba(220, 133, 20, 0.652);
+                    border-radius: 1em;
+                    border-style: solid;
+                    border-width: 1vh;
+                    border-color: white;
+                    margin: auto;
+                    position: relative;
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    /*Contenerdor de la imagen*/
+                    .opcCarousel{
+                        opacity: 0;
+                        width: 90%;
+                        height: 90%;
+                        transition-duration: 1s;
+                        position: absolute;
+                        margin: auto;
+                    }
+                        /*Características de las imágenes*/
+                        .caracImgCarousel{
+                            width: 100%;
+                            height: 100%;
+                            margin: auto;
+                        }
+                    /*Opacidad en la imágenes*/
+                    .opcCarousel:target{
+                        opacity: 1;
+                    }
+                /*Botones para seleccionar las imágenes*/
+                .selecOpcCarousel{
+                    text-align: center;
+                    margin: auto;
+                    padding: 0;
+                    z-index: 1;
+                }
+                    /*Características del alineado de los botones*/
+                    .caracOpcCarousel{
+                        display: inline-block;
+                        text-align: center;
+                    }
+                        /*Características de los botones*/
+                        .caracBtn{
+                            width: 0.1vh;
+                            height: 0.1vh;
+                            display: inline-block;
+                            background-color: rgba(251, 1, 1, 0.89);
+                            padding: 1vh;
+                            border-radius: 100%;
+                            border-color: white;
+                            border-style: solid;
+                            border-width: 1px;
+                        }
+                        /*Características de los botones al pasar el mouse*/
+                        .caracBtn:hover{
+                            background-color: rgba(170, 0, 0, 0.934);
+                            border-color: greenyellow;
+                        }

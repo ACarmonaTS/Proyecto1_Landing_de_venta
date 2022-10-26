@@ -145,7 +145,7 @@ body{
         /*Sección de presentación principal*/
         .contPrinc{
             position: inherit;
-            height: 100vh;
+            height: 110vh;
             display: flex;
             background-image: url(01-portPrin.svg);
             background-repeat: no-repeat;
@@ -171,10 +171,11 @@ body{
                     margin: 5vh 0.2em auto auto;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;  
+                    justify-content: center; 
                 }
                     /*Descripción principal*/
                     .descPagPrin{
+                        width: 80%;
                         text-align: center;
                         font-size: 4vh;
                         font-weight: bolder;
@@ -196,6 +197,7 @@ body{
                     /*Boton "comenzar" al pasar el mosuse*/
                     .btn:hover{
                         cursor: pointer;
+                        background-color: rgb(162, 75, 75);
                     }
                 /*Sección del carrusel de imágenes*/
                 .contCarousel{
@@ -273,45 +275,44 @@ body{
                             }
     /*SECCIÓN DE NUEVOS PRODUCTOS*/
     .contProd{
-        position: inherit;  
-        width: 100%;
-        height: 70vh;
+        position: relative;  
+        width: 100%-10px;
+        height: 40em;
         background-image: url(02-portPrin.svg);
         background-repeat: no-repeat;
         background-size: cover;
         filter: opacity(80%);
-        border-style: solid;
-        border-color: white;
-        border-width: 1em;
+        border: 10px solid rgb(206, 0, 0);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: auto;
     }
         /*Características del triángulo*/
         .triangulo{
             margin: auto;
-            border-right: 35vh solid transparent;
-            border-left: 0vh solid transparent;
-            border-top: 35vh solid rgb(206, 0, 0);
+            border-right: 18rem solid transparent;
+            border-left: 0rem solid transparent;
+            border-top: 18rem solid rgb(206, 0, 0);
             position: absolute;
             top: 0;
             left: 0;
         }
             /*ANUNCIO DE NUEVOS PRODUCTOS*/
             .caracAviso{
-                position: absolute;
+                position: fixed;
                 rotate: -45deg;
                 color: white;
                 font-weight: bold;
-                font-size: 2.2em;
+                font-size: 40px;
                 text-align: center;
-                top: -8em;
-                left: -3vh; 
+                top: 0;
+                left: -20px; 
             }
         /*Contenedor de la primer descripción*/
         .descripProd{
-            width: 50%;
+            width: 52%;
             height: 15%;
             background-color: rgba(255, 255, 255, 0.836);
             position: absolute;
@@ -325,7 +326,7 @@ body{
             .titlePro{
                 position: absolute;
                 font-size: 2em;
-                bottom: 1vh;
+                margin: auto;
             }
                 /*Descripción*/
                 .descrProd{
@@ -410,3 +411,99 @@ body{
                 font-weight: bolder;
                 margin: auto;
             }
+    /*SECCIÓN DE SERVICIOS*/
+    .contServicios{  
+        width: 100%;
+        height: 45rem;
+        background: url(03-portPrin.svg) no-repeat center center;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+        /*titulo de la sección de servicios*/
+        .contTituloServicios{
+            width: 48%;
+            height: 10%;
+            background-color: rgba(255, 255, 255, 0.834);
+            border-radius: 1rem;
+            margin: auto;
+        }
+            /*Titulo*/
+            .tituloServicios{
+                text-align: center;
+                font-size: 300%;
+                font-weight: bolder;
+                margin: 5px auto auto auto;
+            }
+        /*Contenedor del slider de servicios*/
+        .contSliderServicios{
+            width: 90%;
+            height: 85%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+            /*Contenedor de los servicios*/
+            .contArtServ{
+                width: 25%;
+                height: 90%;
+                background-color: rgba(255, 255, 255, 0.749);
+                border: 0.5rem solid white;
+                border-radius: 1rem;
+                margin: auto;
+                display: grid;
+                grid-row: 5% 70% 25%;
+            }
+                /*titulo del sevicio*/
+                .titleArtServ{
+                    width: 85%;
+                    height: 2rem;
+                    margin: auto;
+                    text-align: center;
+                    font-weight: bolder;
+                    font-size: 2rem;
+                }
+                /*Descripción breve del servio*/
+                .descArtSer{
+                    width: 80%;
+                    height: 22rem;
+                    font-weight: bolder;
+                    font-size: 1.4rem;
+                    margin: auto;
+                }
+                /*Boton conocer más*/
+                .btnArtServ{
+                    width: 85%;
+                    height: 80%;
+                    background-color: black;
+                    border-radius: 1rem;
+                    border-style: none;
+                    margin: auto;
+                    color: white;
+                    font-weight: bolder;
+                    font-size: 1.8rem;
+                }
+                /*Boton conocer más al pasar el mouse*/
+                .btnArtServ:hover{
+                    background-color: rgba(0, 0, 0, 0.387);
+                    cursor: pointer;
+                }
+                /*Color del triángulo izquierdo*/
+                .colorTriangIzq{
+                    border-right: 7vh solid rgb(0, 0, 0);
+                }
+                /*Color del triángulo izquierdo al pasar el mouse*/
+                .colorTriangIzq:hover{
+                    border-right: 10vh solid rgb(108, 0, 0);
+                }
+                /*Color del triángulo derecho*/
+                .colorTriangDer{
+                    border-left: 7vh solid rgb(0, 0, 0);
+                }
+                /*Color del triángulo derecho al pasar el mouse*/
+                .colorTriangDer:hover{
+                    border-left: 10vh solid rgb(108, 0, 0);
+                }
