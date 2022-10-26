@@ -498,7 +498,6 @@ body{
                 .titleArtServ{
                     width: 85%;
                     height: 2.2rem;
-                    background-color: aqua;
                     margin: 0 auto;
                     display: flex;
                     justify-content: center;
@@ -511,7 +510,6 @@ body{
                 .descArtSer{
                     width: 98%;
                     height: 15rem;
-                    background-color: aquamarine;
                     font-weight: bolder;
                     font-size: 1.4rem;
                     margin: 5px auto;
