@@ -539,3 +539,108 @@ body{
                 .colorTriangDer{
                     display: none;
                 }
+        /*SECCIÓN DE CLIENTES*/
+    /*Contenedor de la portada principal*/
+    .contCliente{
+        width: 100%;
+        height: 70rem;
+        background: url(04-portPrin.svg) no-repeat center center;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        display: flex
+    }
+        /*Contenedor del contenido*/
+        .contDescClientePrinc{
+            width: 98%;
+            height: 98%;
+            margin: auto auto auto 1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            /*Contenedor del titulo*/
+            .contTituloCliente{
+                width: 90%;
+                height: 9%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px auto auto auto;
+            }
+                /*texto de titulo*/
+                .tituloCliente{
+                    font-size: 3rem;
+                    font-weight: 800;
+                    margin: auto;
+                    -webkit-text-stroke: 2px white;
+                }
+            /*Contenedor de la descripción*/
+            .contDescCliente{
+                width: 90%;
+                height: 58%;
+                margin: auto;
+            }
+                /*descripción*/
+                .descCliente{
+                    font-size: 2rem;
+                    font-weight: 800;
+                    margin: auto;
+                    -webkit-text-stroke: 1px white; 
+                }
+            /*Contenedor de mensaje*/
+            .contEnviar{
+                width: 95%;
+                height: 5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+                /*Características del input*/
+                .ingresarCorreo{
+                    width: 72%;
+                    height: 65%;
+                    font-size: 1rem;
+                    border-width: 2px;
+                    border-radius: 1rem;
+                }
+                /*Características del boton iniciemos ya*/
+                .btnIniciemosYa{
+                    width: 26%;
+                    height: 70%;
+                    background-color: black;
+                    margin: auto;
+                    border-width: 3px;
+                    border-radius: 0.8rem;
+                    border-color: rgb(143, 4, 4);
+                    border-style: solid;
+                    color: white;
+                    font-weight: bolder;
+                    font-size: 0.8rem;
+                }
+                /*Características del boton iniciemos ya al pasar el mouse*/
+                .btnIniciemosYa:hover{
+                    background-color: rgba(0, 0, 0, 0.474);
+                    cursor: pointer;
+                }
+            /*Contenedor de whats*/
+            .contWhats{
+                width: 90%;
+                height: 5%;
+                margin: 0 auto auto auto;
+            }
+                /*Características del boton de whats*/
+                .persoWhats{
+                    -webkit-text-stroke: 0px;
+                    color: black;
+                    background-color: rgb(29, 244, 29);
+                    border-color: rgb(29, 244, 29);
+                }
+                /*Características del boton de whats al pasar el mouse*/
+                .persoWhats:hover{
+                    background-color: rgb(255, 255, 255);
+                    border-color: rgb(255, 255, 255);
+                }
