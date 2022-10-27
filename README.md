@@ -1,5 +1,5 @@
 # Proyecto1_Landing_de_venta
-Rúbrica para proyecto <br> <br>
+Rúbrica para proyecto  <br> <br>
 
 1. Desarrolló prototipado simple <br>
 2. Aplicó en todo el sitio “HTML” semántico de estándar “HTML5” <br>
@@ -11,4 +11,4 @@ Rúbrica para proyecto <br> <br>
 8. Creó un repositorio en GitHub con al menos 5 “commits” <br>
 9. Creó una URL para compartir <br>
 10. Colocó descripción dentro del repositorio <br>
-11. Entrega a tiempo <br>
+10. Entrega a tiempo <br>
