@@ -1,7 +1,7 @@
 # Proyecto1_Landing_de_venta
 Rúbrica para proyecto
 
-Desarrolló prototipado simple
+Desarrolló prototipado simple <br>
 Aplicó en todo el sitio “HTML” semántico de estándar “HTML5”
 Aplicó tipos de selectores en “CSS”
 Se cuenta con sección “Header”
